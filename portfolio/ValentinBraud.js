@@ -18,3 +18,23 @@ function droite(){
 
 
 
+var image_portfolioJ = [];
+
+let y = 0;
+
+function gaucheJ(){
+    if(y != 0){
+        y--;
+        document.getElementById("imgJ").src = image_portfolioJ[y];
+    }
+}
+
+function droiteJ(){
+    if(y < image_portfolioJ.length - 1){
+        y++;
+        document.getElementById("imgJ").src = image_portfolioJ[y];
+    }
+}
+
+
+
