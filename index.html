@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="portfolio/ValentinBraud.CSS">
+        <title>Valentin Braud</title>
+        <script type="text/javascript" src="portfolio/ValentinBraud.js"></script>
+    </head>
+    <body>
+
+        <div id="fullpage">
+            <div class="section " id="section0">
+                <p id="tete">Valentin Braud</p>
+                <div id="back">
+                    <p id="presentation">Bienvenue sur mon portfolio !</p>
+                    <p id="text">
+                        Bonjour, je me présente je suis Valentin BRAUD.<br />
+                        <br />
+                        Depuis 2015 je me suis pris de passion pour le dessin, l’animation et le design.<br />
+                        J’ai commencé à faire mes premiers dessins qui ne ressemblaient pas à ce que je voulais c’est pour cela que je me suis donc orienté dans une formation Bac pro AMA (artisanat et métiers d’art).<br />
+                        J’ai beaucoup appris, les profs m’ont donné des conseils et m’ont permis de pouvoir m’améliorer très vite. J’ai commencé à ce moment-là à enfin faire ce qui me plaisait.<br />
+                         <br />
+                        J’ai malheureusement été contraint d’arrêter cette formation qui pourtant me plaisait pour cause de problèmes personnels.<br />
+                        Je me suis donc réorienté pour effectuer de nouveau une seconde Bac pro mais cette fois, en SN (système numérique).<br />
+                        L’informatique est pour moi une passion complémentaire au design.<br />
+                        <br />
+                        Début 2017, j’achète ma première tablette graphique afin de pouvoir effectuer des dessins sur un nouveau support et de pouvoir continuer à dessiner malgré ma formation actuelle qui n’était pas du tout dans ce domaine. Ce qui m’a d’ailleurs permis de devenir autodidacte très vite.<br />
+                        <br />
+                        Fin 2018 à force de trainer sur internet, je tombe sur un stream de Anderlaxe. Et il devient pour moi en quelques streams, un modèle à suivre. Son style de dessin est totalement ce que je recherchais et ce qui me plais. Ce que je voulais faire depuis le début mais que je n’arrivais pas à retrouver.<br />
+                        <br />
+                        2019 est l’année où j’ai découvert la programmation. J’ai effectué lors de ma formation bac pro, deux stages. Je les ai effectués chez une personne que je connais qui m’a fait découvrir le monde de la programmation. J’ai appris lors du premier stage à développer un jeu vidéo avec Unity. J’ai donc utilisé le langage C#. Lors du second stage, j’ai créé un site avec une base de données et un espace administrateur en HTML, CSS, PHP et MySQL.<br />
+                        J’ai tellement aimé que j’ai entièrement fait ce site tout seul. J’ai appris pour ce site le langage JavaScript pour pouvoir faire des animations.
+                        </p>
+                </div>
+            </div>
+            <div class="section" id="section1">
+                <div id="back">
+                    <p id="dessin">Mes dessins :</p>
+                    <img id="img" src="portfolio/FINI/ALL N.png"/>
+                    <form>
+                        <button id="bouton1" type="button"  onClick="gauche()">
+                        <button id="bouton2" type="button"  onClick="droite()">
+                      </form>
+
+                    <!--<div id="img" class="d1"></div>-->
+                </div>
+            </div>
+            <div class="section" id="section2">
+                    <div id="back">
+                        <p id="dessin">Comment je fonctionne :</p>
+                        <img id="image1" src="portfolio/croquie.png" />
+                    </div>
+            </div>
+        </div>
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js" integrity="sha256-wypDCQw+qwWtdARZAAtUMv/1SWOEB1XHZwAFoNc9Wn8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">document.getElementById('demosMenu').addEventListener('change', function(e){
+    var dropdown = document.getElementById('demosMenu');
+    window.location.href = dropdown.options[dropdown.selectedIndex].getAttribute('id') + '.html';
+    });</script>
+
+    <script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['First page', 'Second page', 'Third and last page']
+    });
+    </script>
+
+    
+
+    </body>
+</html>
